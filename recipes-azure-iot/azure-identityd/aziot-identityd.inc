@@ -39,7 +39,7 @@ RDEPENDS:${PN} = " \
 
 do_compile() {
     oe_cargo_fix_env
-    export RUSTFLAGS="${RUSTFLAGS} -D warnings"
+    export RUSTFLAGS="${RUSTFLAGS}"
     export CARGO_BUILD_FLAGS="${CARGO_BUILD_FLAGS}"
     export RUST_TARGET_PATH="${RUST_TARGET_PATH}"
 

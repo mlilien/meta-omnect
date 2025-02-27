@@ -25,8 +25,6 @@ export IOTEDGE_LISTEN_MANAGEMENT_URI = "fd://aziot-edged.mgmt.socket"
 export IOTEDGE_LISTEN_WORKLOAD_URI = "fd://aziot-edged.workload.socket"
 export SOCKET_DIR = "/run/aziot"
 
-RUSTFLAGS+="-D warnings"
-
 do_install () {
     # Binaries
     install -d  "${D}${bindir}"
